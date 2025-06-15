@@ -2,9 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-demo
-  namespace: demo
+  namespace: demo-ankit
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: nginx
@@ -23,7 +23,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: nginx-demo
-  namespace: demo
+  namespace: demo-ankit
 spec:
   ports:
   - port: 80
