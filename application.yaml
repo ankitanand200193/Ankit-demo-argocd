@@ -6,12 +6,12 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/aryanm12/demo-argocd.git
+    repoURL: https://github.com/ankitanand200193/Ankit-demo-argocd.git
     targetRevision: HEAD
     path: k8s-manifest
   destination:
     server: https://kubernetes.default.svc
-    namespace: demo
+    namespace: demo-ankit
   syncPolicy:
     automated:
       prune: true
